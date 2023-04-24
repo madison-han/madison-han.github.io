@@ -1,41 +1,23 @@
 <!DOCTYPE html>
 <html>
-<!-- Welcome to the code! I've pasted an ASCII penguin for you to enjoy.-->
-<!--        __          -->
-<!--     -=(o '.        -->
-<!--        '.-.\       -->
-<!--        /|  \\      -->
-<!--        '|  ||      -->
-<!--         _\_):,_    -->
-<!-- I did my bst to explain what's going on in the code here. If you have any questions or suggestions, please reach out! -->
-<!-- Press the little arrows next to sections to expand the code-->
-<!-- -->
-<!-- The head contains metadata: I can describe how I want things to be here so I don't have to re-describe it for repeating elements (like paragraphs or buttons) and to keep the code organized and readable. -->
-<!-- Shout out to Kelly Lang '21 for this code! Feel free to update it. -->
 
 <head>
-    <!-- The page title (I'm very creative) -->
-    <title>Hacking Team</title>
+    <!-- Title page -->
+    <title>Madison Han</title>
     
-    <!-- So the webpage doesn't cache any data on your computer-->
-	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
     <meta http-equiv="Pragma" content="no-cache" />
     <meta http-equiv="Expires" content="0" />
     
-    <!-- This is the font I used. It's called "Antic Slab" -->
     <link href='https://fonts.googleapis.com/css?family=Antic Slab' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro" rel="stylesheet">
     
-    <!-- This bit allowed the title to scale itself to the window size (try resizing your window). It allows me to scale stuff in terms of the window size instead of pixels. Look for "vw" units used instead of "px" -->
+    <!-- Scales title to window size. It allows me to scale stuff in terms of the window size instead of pixels. Look for "vw" units used instead of "px" -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
-    <!-- This is for the silly icons in buttons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-	
-	<!-- The style section is coded using CSS (another language), which is used to style the HTML later on -->
 	<style>
-	        /* This is describing the big, beautiful, "scs hacking team" header */
             .header{
                 overflow: hidden;
                 padding: 3px;
@@ -85,21 +67,16 @@
         </style>
     </head>
     
-    <!-- The body has all the main stuff, which you actually see -->
     <body style = 'background:#ECECEC'>
-	    <!-- Creates the header with buttons in it -->
-        <div class = 'header' id = 'header'><h1>SCS Programming Team</h1>
-	        <!-- When you click buttons, a JavaScript function is called to change the page. The functions are defined later. -->
-            <button class = 'btn' onclick = 'home()'><i class="fa fa-home"></i> Home</button>
-            <button class = 'btn' onclick = 'about()'>About</button>
-            <button class = 'btn' onclick = 'join()'>Join</button>
-            <button class = 'btn' onclick = contact()><i class="fa fa-envelope"></i> Message</button>
+        <div class = 'header' id = 'header'><h1>Madison Han</h1>
+	    <button class = 'btn' onclick = 'home()'><i class="fa fa-home"></i>home</button>
+            <button class = 'btn' onclick = 'about()'>about</button>
+            // <button class = 'btn' onclick = 'projects()'>projects</button>
+            <button class = 'btn' onclick = message()><i class="fa fa-envelope"></i>contact</button>
         </div>
-	    <!-- The contents of this paragraph change when buttons are pressed (try it out!) -->
         <p id='txt'></p>
 	
-	    <!-- This is now JavaScript (which you learn in grade 9), which is used to make HTML interactive (like the buttons) -->
-	    <!-- If you're viewing this code using the inspect tool, you'll notice multiple script tags. The ones marked as, "async" were added automatically by the web hosting server I use (DriveToWeb). I don't know what they do, and I don't know how to get rid of them. -->
+	    <!-- Script tags marked as, "async" were added by the web hosting server I use (DriveToWeb) -->
         <script>
 	        //the page loads with the home screen open
             home();
@@ -112,8 +89,7 @@
                     document.getElementById("header").style.fontSize = "3vw";
                 }
             };
-	        // the "txt" paragraph's contents are changed when these functions are called by pressing buttons
-	        // This bit is a little messy and hard to read, but I'm lazy.
+		
             function home () { 
                 document.getElementById('txt').innerHTML = "<div class = 'p'><h2>Welcome!</h2><hr>" + 
                 "<br>We are a space for anyone interested in:<br>" +
@@ -139,7 +115,7 @@
                 "<br><br><img src = 'https://i.gifer.com/YCZM.gif' alt = 'penguin-hacker' width = '200px'/></div>";
             }
             
-            function join () {
+            function projects () {
                 document.getElementById('txt').innerHTML = "<div class = 'p'><h2>Join Instructions</h2><hr>" +
                 "<br>Interested in joining? Follow these instructions to join the Hacking/Programming Team Edsby group. <i>The images may take a moment to load. " +
                 "<br><br><img src = 'https://drive.google.com/uc?id=1omLSfy98KXneRPiJKgq4xt91vp_mg-1j' alt = 'Click-on-St-Clement-School-above-your-Classes' class = 'responsive'/>" +
@@ -147,7 +123,7 @@
                 "<br><br><img src = 'https://drive.google.com/uc?id=1jZOsh45OzZjnrMyVdFctvRWYfGDxRuzH' alt = 'Click-on-it-and-request-to-join' class = 'responsive'/></div>";
             }
             
-            function contact () {
+            function message () {
                 document.getElementById('txt').innerHTML = "<div class = 'p'><h2>Contact</h2><hr>" +
                 "<br>Have any questions, complaints, feedback, fun facts, or jokes you'd like to share? Send us an email or Edsby message!" +
                 
