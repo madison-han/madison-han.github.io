@@ -71,7 +71,7 @@
         <div class = 'header' id = 'header'><h1>Madison Han</h1>
 	    <button class = 'btn' onclick = 'home()'><i class="fa fa-home"></i>home</button>
             <button class = 'btn' onclick = 'about()'>about</button>
-            // <button class = 'btn' onclick = 'projects()'>projects</button>
+            <button class = 'btn' onclick = 'projects()'>projects</button>
             <button class = 'btn' onclick = message()><i class="fa fa-envelope"></i>contact</button>
         </div>
         <p id='txt'></p>
@@ -91,45 +91,25 @@
             };
 		
             function home () { 
-                document.getElementById('txt').innerHTML = "<div class = 'p'><h2>Welcome!</h2><hr>" + 
-                "<br>We are a space for anyone interested in:<br>" +
-                "<br>&bull;App or video game making" +
-                "<br>&bull;Introductory programming" +
-                "<br>&bull;Competitive programming" +
-                "<br>&bull;Hacking (...ethically)" +
-                "<br>&bull;Cybersecurity" +
-                "<br><br>No experience is needed. All skill levels are welcome!<br><br></div>" +
-                "<div class = 'p'><h2>Competitions</h2><hr>" +
-                "<br>This year, we're participating in the <a href = 'https://cemc.math.uwaterloo.ca/contests/ccc-cco.html'>Canadian Computing Competition</a> (Feb 16). It's a fun challenge for anyone interested in programming. <br><br>Make sure to sign up <a href = 'https://forms.gle/4WXojQxiDKKeqc6x8'>here</a>!<br><br></div>" +
-                "<div class = 'p'><h2>Meetings</h2><hr>" +
-                "<br>Since our team encompasses a wide variety of interests, some meetings may be more relevant for some members than others. Members are still strongly encouraged to attend all meetings, and to participate in the challenges/activities posted on our Edsby page after every meet. See you there!<br><br></div>";
-        //        "<div class = 'p'><h2>Competitions</h2><hr>" +
-        //        "In the past, the Programming Team has participated in a wide range of (optional) competitions. We have done competitions virtually, in person, against other schools, and against our teammates. This year, with the combination of Hacking and Programming Teams, we are excited to announce that hacking competitions WILL be a possibility in addition to the usual programming ones!" +
-        //        "<br><br><img src = 'https://drive.google.com/uc?id=1bQuY1qyZD7KmQrQrGBvwW61ov3_Tkkay' alt = 'theSquad' class = 'responsive'/>" +
-        //        "<i><br>The 2019-2020 Hacking Club after an in-house competition. Although we may not be able to bribe you with food this year, I'm sure we'll think of a suitable alternative soon enough.</i><br><br></div>"; 
+              document.getElementById('txt').innerHTML = "<div class = 'p'><h2>Welcome!</h2><hr>";
+              "<br>&bull;Lol" +
             }
             
             function about () {
-                document.getElementById('txt').innerHTML = "<div class = 'p'><h2>About the Site</h2><hr>" +
-                "<br>This website was originally created by the very cool 2020-2021 club leader, Kelly Lang, who thought coding would be more fun than homework. Feel free to inspect the source code <a href = 'https://drive.google.com/file/d/1Vh1XO35krwJs6uKdvygcXG5gOO8LbExv'>here</a>. Think you can do a better job? Want to learn how it's done? Join the team. All skill levels are welcome. " +
-                "<br><br><img src = 'https://i.gifer.com/YCZM.gif' alt = 'penguin-hacker' width = '200px'/></div>";
+                document.getElementById('txt').innerHTML = "<div class = 'p'><h2>About the Site</h2><hr>";
             }
             
             function projects () {
                 document.getElementById('txt').innerHTML = "<div class = 'p'><h2>Join Instructions</h2><hr>" +
-                "<br>Interested in joining? Follow these instructions to join the Hacking/Programming Team Edsby group. <i>The images may take a moment to load. " +
-                "<br><br><img src = 'https://drive.google.com/uc?id=1omLSfy98KXneRPiJKgq4xt91vp_mg-1j' alt = 'Click-on-St-Clement-School-above-your-Classes' class = 'responsive'/>" +
-                "<br><br><img src = 'https://drive.google.com/uc?id=12-BejERsrG5P7Pw8RmnNqQSWIprhDbX4' alt = 'Search-for-Hacking-Team' class = 'responsive'/>" +
-                "<br><br><img src = 'https://drive.google.com/uc?id=1jZOsh45OzZjnrMyVdFctvRWYfGDxRuzH' alt = 'Click-on-it-and-request-to-join' class = 'responsive'/></div>";
+                "<br>Interested in joining? Follow these instructions to join the Hacking/Programming Team Edsby group. <i>The images may take a moment to load.";
             }
             
             function message () {
                 document.getElementById('txt').innerHTML = "<div class = 'p'><h2>Contact</h2><hr>" +
-                "<br>Have any questions, complaints, feedback, fun facts, or jokes you'd like to share? Send us an email or Edsby message!" +
-                
-                "<br><br><u>Mr. Jones</u><br>owain.jones@scs.on.ca"+
-                "<br><br><u>Sydney Quach</u><br>sydney.quach@scs.on.ca" +
-                "<br><br><u>Madison Han</u><br>madison.han@scs.on.ca<br><br></div>";
+                "<br><a href = 'https://github.com/madison-han'>Github: madison-han</a>" +
+		"<br><a href = 'https://www.linkedin.com/in/madison-han-01b5701a4/?originalSubdomain=ca'>Linkedin: Madison Han</a> " + 
+
+                ;
             }
         </script>
     </body>
