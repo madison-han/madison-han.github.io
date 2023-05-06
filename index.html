@@ -42,7 +42,166 @@
             }
             .btn:hover{
                 background: #b0bec0;
-                color:#FFF;<!DOCTYPE html>
+                color:#FFF;<!DOCTYPE html><!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Title page -->
+    <title>Madison Han</title>
+    
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    
+    <link href='https://fonts.googleapis.com/css?family=Antic Slab' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro" rel="stylesheet">
+    
+    <!-- Scales title to window size. It allows me to scale stuff in terms of the window size instead of pixels. Look for "vw" units used instead of "px" -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+            .header{
+                overflow: hidden;
+                padding: 10px;
+                text-align: center;
+                background:#FFF;
+                position: sticky;
+                position: -webkit-sticky;
+                top: 0;
+                color:#555555;
+                font-family:'Source Code Pro';
+		            font-size: 2vw;
+            }
+            
+            .typewriter{
+                animation: typing 5s steps(40) 1s forwards, blink-caret 0.75s steps(40) infinite;
+                color:#555555;
+                font-family:'Source Code Pro';
+		            font-size: 2vw;
+            }
+            
+            @keyframes typing {
+	      		  from { width: 0 }
+			        to { width: 100% }
+		        }
+		        /* Create the blinking caret animation keyframes */
+		        @keyframes blink-caret {
+		        	from, to { border-color: transparent }
+		        	50% { border-color: #000 }
+		        }
+
+            .btn{
+                font-family:'Source Code Pro';
+                background:#ECECEC;
+                padding:5px;
+                border:#100;
+                margin:1vw;
+                font-size:1.5vw;
+                color:#949494;
+            }
+            .btn:hover{
+                background: #b0bec0;
+                color:#FFF;
+                box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #00FFFF, 0 0 35px #00FFFF;
+                transition: all 0.3s ease-in-out;
+            }
+                
+	          /* The gray paragraph blocks */
+            .p{
+                font-family:'Source Code Pro';
+                margin-right:7%;
+                margin-left:7%;
+                margin-top:2%;
+                text-align: center;
+                background:#FFF;
+                padding:10px;
+                font-size:19px;
+                color:#555555;
+            } 
+            
+            /* Makes the images scaleable to the window size  */
+	          .responsive{
+		            width: 100%;
+  		          max-width: 1000px;
+  		          height: auto;
+	          }
+	          
+	          .link{
+	            font-family:'Source Code Pro';
+                background:#ECECEC;
+                padding:5px;
+                border:#100;
+                margin:1vw;
+                font-size:1.5vw;
+                color:#949494;
+	          }
+        </style>
+	    
+</head>
+    
+    <body style = 'background:#ECECEC'>
+        <div class = 'header' id = 'header'><h1>Madison Han</h1>
+	          <button class = 'btn' onclick = 'home()'><i class="fa fa-home"></i> home</button>
+            <button class = 'btn' onclick = 'about()'><i class = "fa fa-address-card"></i> about</button>
+            <button class = 'btn' onclick = 'projects()'><i class = "fa fa-pencil-square"></i> projects</button>
+            <button class = 'btn' onclick = message()><i class="fa fa-envelope"></i> message</button>
+        </div>
+        <p id='txt'></p>
+	
+        <script>
+          // typewriter effect
+          var text = document.querySelector('.typewriter');
+		      var str = text.innerHTML;
+		      text.innerHTML = "";
+		      var i = 0;
+		      var speed = 50;
+		      function type() {
+		      	if (i < str.length) {
+		      		text.innerHTML += str.charAt(i);
+		      		i++;
+		      		setTimeout(type, speed);
+		      	}
+		      }
+		      setTimeout(type, 2000); 
+		      
+		
+	        //the page loads with the home screen open
+            message();
+	        
+            //the onscroll event calls the scroll function to make the top banner get smaller when you scroll down
+            window.onscroll = function () {
+                if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+                    document.getElementById("header").style.fontSize = "1.7vw";
+                } else {
+                    document.getElementById("header").style.fontSize = "3vw";
+                }
+            };
+		
+            function home () { 
+              document.getElementById('txt').innerHTML = "<div class = 'p'><h2>Welcome!</h2><hr>";
+            }
+            
+            function about () {
+                document.getElementById('txt').innerHTML = "<div class = 'p'><h2>About the Site</h2><hr>";
+            }
+            
+            function projects () {
+                document.getElementById('txt').innerHTML = "<div class = 'p'><h2>Join Instructions</h2><hr>" +
+                "<br>Interested in joining? Follow these instructions to join the Hacking/Programming Team Edsby group. <i>The images may take a moment to load.";
+            }
+            
+            function message () {
+              document.getElementById('txt').innerHTML = "<div class = 'p'><h2>contact me<i class="fa fa-home"></i></h2><hr>" +
+              "<br><a href = 'https://github.com/madison-han'>Github: madison-han</a>" +
+              //document.getElementById('txt').innerHTML = "<div class = 'link'><h2>contact me</h2><hr>" +
+                
+		          "<br><a href = 'https://www.linkedin.com/in/madison-han-01b5701a4/?originalSubdomain=ca'>Linkedin: Madison Han</a>";
+		          
+            }
+        </script>
+    </body>
+</html>
 <html>
 
 <head>
