@@ -30,22 +30,22 @@
 		            font-size: 2vw;
             }
             
-            .typewriter{
-                animation: typing 5s steps(40) 1s forwards, blink-caret 0.75s steps(40) infinite;
-                color:#555555;
-                font-family:'Source Code Pro';
-		            font-size: 2vw;
-            }
-            
-            @keyframes typing {
-	      		  from { width: 0 }
-			        to { width: 100% }
-		        }
-		        /* Create the blinking caret animation keyframes */
-		        @keyframes blink-caret {
-		        	from, to { border-color: transparent }
-		        	50% { border-color: #000 }
-		        }
+            //.typewriter{
+            //    animation: typing 5s steps(40) 1s forwards, blink-caret 0.75s steps(40) infinite;
+            //    color:#555555;
+            //    font-family:'Source Code Pro';
+		        //    font-size: 2vw;
+            //}
+            //
+            // @keyframes typing {
+	      		//    from { width: 0 }
+			      //    to { width: 100% }
+		        // }
+		        // /* Create the blinking caret animation keyframes */
+		        // @keyframes blink-caret {
+		        // 	from, to { border-color: transparent }
+		        // 	50% { border-color: #000 }
+		        // }
 
             .btn{
                 font-family:'Source Code Pro';
@@ -82,6 +82,17 @@
   		          max-width: 1000px;
   		          height: auto;
 	          }
+	          
+	          .contactlink {
+	            font-family: 'Source Code Pro';
+              background:#ECECEC;
+              padding:5px;
+              border:#100;
+              margin:1vw;
+              font-size:1.5vw;
+              color:#949494;
+	            
+	          }
         </style>
     </head>
     
@@ -95,21 +106,21 @@
         <p id='txt'></p>
 	
         <script>
-          home();
-          // typewriter effect
-          var text = document.querySelector('.typewriter');
-		      var str = text.innerHTML;
-		      text.innerHTML = "";
-		      var i = 0;
-		      var speed = 50;
-		      function type() {
-		      	if (i < str.length) {
-		      		text.innerHTML += str.charAt(i);
-		      		i++;
-		      		setTimeout(type, speed);
-		      	}
-		      }
-		      setTimeout(type, 2000); 
+          message();
+          //// typewriter effect
+          //var text = document.querySelector('.typewriter');
+		      //var str = text.innerHTML;
+		      //text.innerHTML = "";
+		      //var i = 0;
+		      //var speed = 50;
+		      //function type() {
+		      //	if (i < str.length) {
+		      //		text.innerHTML += str.charAt(i);
+		      //		i
+		      //		setTimeout(type, speed);
+		      //	}
+		      //}
+		      //setTimeout(type, 2000); 
 		      
 	
 	        
@@ -128,10 +139,7 @@
             }
             
             function about () {
-                document.getElementById('txt').innerHTML = "<div class = 'p'><h2>About Me</h2><hr>" +
-                
-                
-                ;
+                document.getElementById('txt').innerHTML = "<div class = 'p'><h2>About Me</h2><hr>";
             }
             
             function projects () {
@@ -142,10 +150,13 @@
             function message () {
                 document.getElementById('txt').innerHTML = "<div class = 'p'><h2>Contact Me!</h2><hr>" +
                 "<br><a href = 'https://github.com/madison-han'>Email: madison.han@uwaterloo.ca</a>" +
-                "<br><a href = 'https://github.com/madison-han'>Phone Number: 437-262-54</a>" +
+                "<br><a href = 'https://github.com/madison-han'>Phone Number: 437-262-5468</a>" +
 
                 "<br><a href = 'https://github.com/madison-han'>Github: madison-han</a>" +
-		          "<br><a href = 'https://www.linkedin.com/in/madison-han-01b5701a4/?originalSubdomain=ca'>Linkedin: Madison Han</a>";
+		            "<br><a href = 'https://www.linkedin.com/in/madison-han-01b5701a4/?originalSubdomain=ca'>Linkedin: Madison Han</a>";
+                "<div class = 'contactlink'><h2>Contact Me!</h2><hr>";
+
+
             }
         </script>
     </body>
