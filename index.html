@@ -99,7 +99,7 @@
     <body style = 'background:#ECECEC'>
         <div class = 'header' id = 'header'><h1>Madison Han</h1>
 	          <button class = 'btn' onclick = 'home()'><i class="fa fa-home"></i> home</button>
-            <button class = 'btn' onclick = 'about()'><i class = "fa fa-address-card"></i> about</button>
+           <!-- <button class = 'btn' onclick = 'about()'><i class = "fa fa-address-card"></i> about</button> -->
             <button class = 'btn' onclick = 'projects()'><i class = "fa fa-pencil-square"></i> projects</button>
             <button class = 'btn' onclick = message()><i class="fa fa-envelope"></i> message</button>
         </div>
@@ -143,8 +143,7 @@
             }
             
             function projects () {
-                document.getElementById('txt').innerHTML = "<div class = 'p'><h2>Join Instructions</h2><hr>" +
-                "<br>Interested in joining? Follow these instructions to join the Hacking/Programming Team Edsby group. <i>The images may take a moment to load.";
+                document.getElementById('txt').innerHTML = "<div class = 'p'><h2></h2><hr>";
             }
             
             function message () {
