@@ -21,12 +21,10 @@
             padding: 10px;
             text-align: center;
             background: #FFF;
-            position: sticky;
-            position: -webkit-sticky;
             top: 0;
             color: #555555;
             font-family: 'Source Code Pro';
-            font-size: 1.5vw;
+            font-size: 1vw;
         }
 
         .btn {
@@ -54,7 +52,7 @@
             text-align: center;
             background: #FFF;
             padding: 10px;
-            font-size: 19px;
+            font-size: 23px;
             color: #555555;
         }
 
@@ -114,10 +112,10 @@
 
         // The onscroll event calls the scroll function to make the top banner get smaller when you scroll down
         window.onscroll = function () {
-            if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-                document.getElementById("header").style.fontSize = "1.5vw";
+            if (document.body.scrollTop >= 50 || document.documentElement.scrollTop >= 50) {
+                document.getElementById("header").style.fontSize = "1vw";
             } else {
-                document.getElementById("header").style.fontSize = "2vw";
+                document.getElementById("header").style.fontSize = "1.5vw";
             }
         };
 
@@ -129,7 +127,7 @@
         function about() {
              document.getElementById('txt').innerHTML = "<div class='p'><h2>Hello!</h2><hr>" +
                 "<br>My name is <b>Madison Han</b>."+
-                "<br><br> I'm a second year at the University of Waterloo double majoring in <b>Computational Mathematics</b> and <b>Statistics</b>.<br><br>"+
+                "<br><br> I'm a second year at the University of Waterloo double majoring in <b>Computational Mathematics</b> and <b>Statistics</b>.<br>"+
                 "<br> In my freetime, I enjoy programming, rock climbing, hiking, board games, and Star Trek!<br><br> </div>" +
                 "<br><br>";
 
