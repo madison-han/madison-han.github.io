@@ -16,6 +16,14 @@
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <style>
+    
+         body {
+         	height: 100%;
+         	width: 100%;
+         	margin: 0;
+         	-webkit-text-size-adjust: none !important;
+         }
+
         .header {
             overflow: hidden;
             padding: 10px;
@@ -74,13 +82,20 @@
             color: #949494;
         }
 
-        .footer {
+         .footer {
           background: #FFF;
           padding: 10px;
           text-align: center;
           color: #555555;
           font-family: 'Source Code Pro';
           font-size: 1vw;
+          margin-top: auto;
+          height: 100%;
+	       width: 100%;
+	       bottom: 0;
+	       position: sticky;
+
+
         }
 
       .footer a {
@@ -88,19 +103,12 @@
         font-size: 18px;
         color: #555555;
         transition: all 0.3s ease-in-out; /* Add transition for animation */
-        position: sticky;
-            position: -webkit-sticky;
       }
-
       .footer a:hover {
-        font-size: 22px;
+        font-size: 20px;
         transform: rotate(360deg); /* Add rotation animation on hover */
-        color: #FFF; /* Change color to white on hover */
+       color: #FFF; /* Change color to white on hover */
         text-shadow: 0 0 10px #FFF, 0 0 20px #00FFFF, 0 0 35px #00FFFF; /* Add glow effect */
-        position: absolute;
-        bottom: 0;
-        width: 100%;
-        height: 50px; /* Adjust the height as needed */
       }
     </style>
 </head>
@@ -143,13 +151,13 @@
 
         function projects() {
             document.getElementById('txt').innerHTML = "<div class='p'><h2><a href='https://github.com/madison-han/Weather-App'>WeatherApp</a></h2><hr>"+
-              "<br>This <b>Java</b> application allows users to retrieve weather information for a specific city using the OpenWeatherMapp <b>API</b>.<br><br></div>"+
+              "<br>This <b>Java</b> application allows users to retrieve weather information for a specific city using the OpenWeatherMapp <b>API</b>.<br></div>"+
               "<div class='p'><h2><a href='https://github.com/madison-han/To-Do-List'>ToDo</a></h2><hr>"+
-              "<br>A simple to-do list application built with React! Tasks can be added, marked as complete, and deleted.<br><br></div>"+
+              "<br>A simple to-do list application built with React! Tasks can be added, marked as complete, and deleted.</div>"+
               "<div class='p'><h2><a href='https://github.com/madison-han/Scripts-for-CS-246'>Bash Scripts</a></h2><hr>"+
-              "<br>Various Bash scripts written for testing automation in an Object Oriented Programming course.<br><br></div>"+
+              "<br>Various Bash scripts written for testing automation in an Object Oriented Programming course.<br></div>"+
                "<div class='p'><h2><a href='https://github.com/madison-han/madison-han.github.io'>This Site!</a></h2><hr>"+
-              "<br>Created with HTML, CSS, and Javascript.<br><br></div>" +
+              "<br>Created with HTML, CSS, and Javascript.<br></div>" +
               "<br>";
 
         }
@@ -159,7 +167,7 @@
                 "<br>Phone Number: 437-262-5468" +
                 "<br>Email: <a href='mailto:madisonhan04@gmail.com'>madisonhan04@gmail.com</a>" +
                 "<br>Github: <a href='https://github.com/madison-han'>madison-han</a>" +
-                "<br>LinkedIn: <a href='https://www.linkedin.com/in/madison-han-01b5701a4/'>Madison Han</a><br><br>" +
+                "<br>LinkedIn: <a href='https://www.linkedin.com/in/madison-han-01b5701a4/'>Madison Han</a><br>" +
                 "</div>" + 
                 "<br>";
         }
