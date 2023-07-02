@@ -1,0 +1,92 @@
+body {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	-webkit-text-size-adjust: none !important;
+}
+
+.header {
+  overflow: hidden;
+  padding: 10px;
+  text-align: center;
+  background: #FFF;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  color: #555555;
+  font-family: 'Source Code Pro';
+  font-size: 1vw;
+}
+
+.btn {
+  font-family: 'Source Code Pro';
+  background: #ECECEC;
+  padding: 5px;
+  border: none;
+  margin: 1vw;
+  font-size: 1vw;
+  color: #949494;
+}
+
+.btn:hover {
+  background: #b0bec0;
+  color: #FFF;
+  box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #00FFFF, 0 0 35px #00FFFF;
+  transition: all 0.3s ease-in-out;
+}
+
+.p {
+  font-family: 'Source Code Pro';
+  margin-right: 20%;
+  margin-left: 20%;
+  margin-top: 2%;
+  text-align: center;
+  background: #FFF;
+  padding: 50px;
+  font-size: 23px;
+  color: #555555;
+}
+
+.responsive {
+  width: 100%;
+  max-width: 1000px;
+  height: auto;
+}
+
+.contactlink {
+  font-family: 'Source Code Pro';
+  background: #ECECEC;
+  padding: 5px;
+  border: none;
+  margin: 1vw;
+  font-size: 1.5vw;
+  color: #949494;
+}
+
+.footer {
+  background: #FFF;
+  padding: 10px;
+  text-align: center;
+  color: #555555;
+  font-family: 'Source Code Pro';
+  font-size: 1vw;
+  margin-top: auto;
+  height: 100%;
+  width: 100%;
+  bottom: 0;
+  position: sticky;
+}
+
+.footer a {
+  margin: 0 10px;
+  font-size: 18px;
+  color: #555555;
+  transition: all 0.3s ease-in-out; 
+}
+
+.footer a:hover {
+  font-size: 20px;
+  transform: rotate(360deg); 
+  color: #FFF; 
+  text-shadow: 0 0 10px #FFF, 0 0 20px #00FFFF, 0 0 35px #00FFFF; 
+}
