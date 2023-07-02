@@ -31,8 +31,9 @@ function projects() {
 function contact() {
   document.getElementById('txt').innerHTML = "<div class='p'><h2>Contact Me!</h2><hr>" +
   "<br>Phone Number: 437-262-5468" +
-  "<br>Email: <a href='mailto:madisonhan04@gmail.com'>madisonhan04@gmail.com</a>" +
-  "<br>Github: <a href='https://github.com/madison-han'>madison-han</a>" +
-  "<br>LinkedIn: <a href='https://www.linkedin.com/in/madison-han-01b5701a4/'>Madison Han</a><br>" +
+  "<br><i class='fa fa-phone'></i> (437)-262-5468" +
+  "<br><a href='mailto:madisonhan04@gmail.com'><i class='fa fa-envelope'></i></a> <a href='mailto:madisonhan04@gmail.com'> madisonhan04@gmail.com</a>" +
+  "<br><a href='https://github.com/madison-han'><i class='fa fa-github'></i></a> <a href='https://github.com/madison-han'> madison-han</a>" +
+  "<br><a href='https://www.linkedin.com/in/madison-han-01b5701a4/'><i class='fa fa-linkedin'></i></a> <a href='https://www.linkedin.com/in/madison-han-01b5701a4/'> Madison Han</a>" +
   "</div><br>"; 
 }
