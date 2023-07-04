@@ -24,7 +24,7 @@ function projects() {
     "<div class='p'><h2><a href='https://github.com/madison-han/Scripts-for-CS-246'>Bash Scripts</a></h2><hr>"+
     "<br>Various Bash scripts written for testing automation in an Object Oriented Programming course.<br></div>"+
     "<div class='p'><h2><a href='https://github.com/madison-han/madison-han.github.io'>This Site!</a></h2><hr>"+
-    "<br>Created with HTML, CSS, and Javascript.<br></div>" +
+    "<br>Created with HTML, CSS, Javascript, and React.<br></div>" +
     "<br>";
 }
 
