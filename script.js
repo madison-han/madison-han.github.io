@@ -30,7 +30,6 @@ function projects() {
 
 function contact() {
   document.getElementById('txt').innerHTML = "<div class='p'><h2>Contact Me!</h2><hr>" +
-  "<br>Phone Number: 437-262-5468" +
   "<br><i class='fa fa-phone'></i> (437)-262-5468" +
   "<br><a href='mailto:madisonhan04@gmail.com'><i class='fa fa-envelope'></i></a> <a href='mailto:madisonhan04@gmail.com'> madisonhan04@gmail.com</a>" +
   "<br><a href='https://github.com/madison-han'><i class='fa fa-github'></i></a> <a href='https://github.com/madison-han'> madison-han</a>" +
