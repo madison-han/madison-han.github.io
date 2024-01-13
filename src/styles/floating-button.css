@@ -46,7 +46,6 @@
 
 @media (max-width:600px) {
   .to-top-button {
-    font-size: 4vh;
     padding:3%
   }
   .dark-mode-button {
