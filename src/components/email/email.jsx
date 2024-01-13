@@ -108,6 +108,7 @@ export default function Email() {
 
               To
               <a 
+                  class="nameToEmail"
                   href="mailto:madisonhan04@gmail.com"
                   onMouseEnter={handleMouseEnter}
                   onMouseLeave={handleMouseLeave} 
