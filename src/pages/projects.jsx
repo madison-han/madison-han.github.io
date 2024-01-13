@@ -7,7 +7,7 @@ import "../App.css";
 const projectData = [
     {
       title: "CC3K",
-      subtitle: "246Text-based RPG",
+      subtitle: "Text-based RPG",
       description: "CS 246 (Object Oriented Software Development) group project, achieved a 99.1%.",
       img: "https://i.imgur.com/uUEwiBF.gif",
       skills: "C++, OOP, Software Design Patterns, Collaborative Problem Solving",
