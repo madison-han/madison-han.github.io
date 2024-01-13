@@ -1,0 +1,27 @@
+.icon-text {
+    font-size: 17px;
+    font-family: 'Poppins', sans-serif;
+    color:#00d8d885;
+  }
+
+a.messageMePopup {
+  text-shadow:0 0 18px #00FFFF;
+}
+
+/* a.messageMePopup:hover {
+  animation: glowingText 2s  infinite;
+} */
+
+.contactLink {
+  white-space:nowrap;
+}
+
+
+@keyframes glowingText {
+  0% { filter: text-shadow(0 0 10px #00ffff); }
+  70% { filter: text-shadow(0 0 14px #00FFFF, 0 0 24px #00FFFF, 0 0 37px #00FFFF); }
+  90% { filter: text-shadow(0 0 18px #00FFFF, 0 0 28px #00FFFF, 0 0 41px #00FFFF); }
+  /* 100% { filter: text-shadow(0 0 10px #00ffff); } */
+ 
+ }
+ 
