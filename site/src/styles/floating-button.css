@@ -1,0 +1,56 @@
+.dark-mode-button {
+  position: fixed;
+  right:2vh;
+  top:2vh;
+  background-color: #414141;
+  color: #ffffff;
+  padding: 10px 10px;
+  text-decoration: none;
+  border-radius: 100px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  font-size: 20px;
+  font-family: 'Source Code Pro';
+  cursor:pointer;
+  z-index:999;
+}
+
+.dark-mode-button:hover {
+  background-color: #19a9a9;
+  color: #fff;
+  /* cursor: move; */
+}
+
+
+.to-top-button {
+  position: fixed;
+  right:2vh;
+  bottom:2vh;
+  background-color: #0d6969;
+  color: #62cece;
+  padding: 10px 10px;
+  text-decoration: none;
+  border-radius: 100px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  font-size: 20px;
+  font-family: 'Source Code Pro';
+  cursor:pointer;
+  z-index:999;
+}
+
+.to-top-button:hover {
+  background-color: #13b6b6;
+  color: #fff;
+  scale:1.05;
+  /* cursor: move; */
+}
+
+@media (max-width:600px) {
+  .to-top-button {
+    font-size: 4vh;
+    padding:3%
+  }
+  .dark-mode-button {
+    font-size: 4vh;
+    padding:3%
+  }
+}
