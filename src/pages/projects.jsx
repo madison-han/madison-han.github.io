@@ -8,7 +8,7 @@ const projectData = [
     {
       title: "CC3K",
       subtitle: "Text-based RPG",
-      description: "CS 246 (Object Oriented Software Development) group project, achieved a 99.1%.",
+      description: "Developed under the strict timeline of two weeks with two teammates for a final group project. Created with 51 .cc and .h files. Achieved a 99.1%.",
       img: "https://i.imgur.com/uUEwiBF.gif",
       skills: "C++, OOP, Software Design Patterns, Collaborative Problem Solving",
       github: "https://github.com/madison-han/cc3k"
@@ -16,7 +16,7 @@ const projectData = [
     {
       title: "Harmony Haven",
       subtitle: "Visual Novel",
-      description: "Created with Unity",
+      description: "Work in progress, created with Unity. Message me for a demo!",
       img: "https://i.imgur.com/cj0vpbO.gif",
       skills: "C#, OOP, Unity, UIX, Beginner Game Development",
       github: "https://github.com/madison-han/Harmony-Haven"

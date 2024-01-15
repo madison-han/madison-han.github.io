@@ -23,7 +23,7 @@
 
 .to-top-button {
   position: fixed;
-  right:2vh;
+  left:2vh;
   bottom:2vh;
   background-color: #0d6969;
   color: #62cece;
@@ -35,6 +35,9 @@
   font-family: 'Source Code Pro';
   cursor:pointer;
   z-index:999;
+  padding:1;
+    font-size: 20px;
+
 }
 
 .to-top-button:hover {
@@ -44,9 +47,10 @@
   /* cursor: move; */
 }
 
-@media (max-width:600px) {
+@media (max-width:1000px) {
   .to-top-button {
-    padding:3%
+    padding:1%;
+    font-size: 11px;
   }
   .dark-mode-button {
     font-size: 4vh;

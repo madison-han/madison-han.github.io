@@ -104,3 +104,8 @@ a.github:hover {
   color:#00FFFF;
 }
 
+li {
+  list-style-position: outside;
+
+  text-indent:-1.5em;
+}

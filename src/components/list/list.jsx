@@ -1,9 +1,16 @@
 import "./list.css";
 
 
-const List = (props ) => {
+const List = (props) => {
     const {isProject} = props;
     // const {isLast} = props;
+
+    const isItemed = props.description.substring(0,5) === "ITEM:";
+    let bulletItems = [];
+    if (isItemed) {
+        bulletItems =  props.description.split('ITEM:').filter(item => item.trim() !== '');
+
+    }
 
     return (
         <div class="item-container">
@@ -21,11 +28,23 @@ const List = (props ) => {
                     <br/>
                     <div class ="item-description">
                         {props.description !== "" && <br/>}
-                        {props.description} 
+                        {isItemed && 
+                            bulletItems.map((item, index) => {
+                                return <li key={index}>{item}</li>;
+                            })
+                        }
+                        {!isItemed && props.description} 
                     </div>
 
                     <br/>
-                    <div class ="item-description"><b>Skills: </b>{props.skills} </div>
+                    <div class ="item-description">
+                        {props.skills !== "" && 
+                            <>
+                                <b>Skills: </b>
+                                {props.skills}
+                            </>
+                        }
+                    </div>
 
                     {isProject && <p class="github">
                             <a 
