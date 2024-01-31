@@ -1,0 +1,149 @@
+.email {
+  position: fixed;
+  bottom: 10%;
+  right: 1vh;
+  width: 45vh;
+  height: 60vh;
+  background-color: #ffffff;
+  padding: 20px 20px;
+  text-decoration: none;
+  border-radius: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  font-size: 20px;
+  font-family: 'Poppins', sans-serif;
+  cursor:default; 
+  color:black;
+  z-index:90;
+
+  overflow:auto;
+}
+
+/* 
+@media (max-width:800px) {
+    .send-button {
+        display:none;
+    }
+} */
+/* 
+@media (max-width:700px) {
+    .email p {
+        display:none;
+    }
+}
+ */
+
+
+
+.email p {
+    font-family: 'Arial';
+    color: black;
+
+}
+
+
+.email hr {
+    max-width: 100%;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    background-color: rgb(211, 211, 211);
+
+} 
+
+
+.send-button {
+    position:relative;
+    background-color: #00d8d885;
+    scale: 2;
+    border-radius: 100px;
+    border-color: #00000085;
+    z-index:90;
+    color:#000000;
+    top:3em;
+    left:0.9em;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+@keyframes glowingCyan {
+    0% { box-shadow: 0 0 10px #00ffff; }
+    30% { box-shadow: 0 0 14px #00FFFF, 0 0 24px #00FFFF, 0 0 37px #00FFFF; }
+    /* 60% { box-shadow: 0 0 18px #00FFFF, 0 0 28px #00FFFF, 0 0 41px #00FFFF; } */
+    100% { box-shadow: 0 0 10px #00ffff; }
+  
+  }
+  
+
+.item-divider {
+    color:black;
+    height:1px;
+    width:115em;
+}
+
+.send-button:hover {
+    transform: scale(1.1);
+    color: rgb(255, 255, 255);
+    animation: glowingCyan 2s infinite;
+
+}
+
+
+.nameToEmail {
+    color:#00aeae;
+}
+
+
+.email textarea {
+    /* background-color: red; */
+    font-family: 'Arial';
+    font-size:20px;
+    border: none;
+    outline:none;
+    resize: none;
+    width: 100%;
+    background-color: #ffffff;
+}
+
+
+
+
+.email input {
+    font-family: 'Arial';
+    font-size: 20px;
+    border: none;
+    outline:none;
+    width:100%;
+    background-color:#ffffff;
+}
+
+#copyMessage {
+    display: none;
+    color: green;
+    font-size: 14px;
+    transition: opacity 0.5s ease-in-out;
+}
+
+/* Random line showed up, this gets rid of it */
+.popup-content{
+    width:0%;
+    right:100%;
+    color:black;
+}
+
+
+
+
+.Email ::-webkit-scrollbar {
+    /* background-color: #202324;
+    color: #aba499; */
+    background-color: rgb(243, 243, 243);
+    /* color: white; */
+    border-radius: 100px;
+}
+  
+  
+.Email ::-webkit-scrollbar-thumb {
+    /* background-color: #454a4d; */
+    background-color: rgba(219, 217, 217, 0);
+    border-radius: 100px;
+  }
+

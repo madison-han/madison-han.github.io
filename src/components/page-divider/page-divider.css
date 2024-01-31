@@ -1,0 +1,13 @@
+.page-divider-container {
+    padding-top:15vh;
+    padding-bottom: 5vh;
+}
+
+.page-divider {
+    background-color:rgb(53, 255, 255);
+    border: none;
+    height: 1px;
+    width: 100%;
+
+    display:none;
+}

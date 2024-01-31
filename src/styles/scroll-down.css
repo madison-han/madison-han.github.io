@@ -1,0 +1,20 @@
+
+.scroll-down {
+    background-color: rgba(0, 215, 215);
+    border:none;
+    /* border-radius:10px; */
+    width: 98%;
+    padding: 0.25vh 1vh 0.5vh;
+    color: rgb(255, 255, 255);
+    font-size:2vh;
+    /* display:static; */
+    /* bottom:40vh; */
+  }
+
+  @media screen and (max-width: 800px) {
+    .scroll-down {
+      display:none;
+    }
+  }
+  
+  

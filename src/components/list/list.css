@@ -1,0 +1,111 @@
+/* .list-container {
+    max-width: 80vh;
+    background-color: red;
+} */
+
+.item-container {
+  padding:3vh;
+  padding-bottom:1vh;
+}
+
+.item {
+    padding: 3vh;
+    border-radius: 2.5em;
+    font-family: "Poppins", sans-serif;
+    background-color: rgb(44, 44, 44); 
+    display: flex;
+    align-items: flex-start; /* Align items vertically */
+
+}
+
+.item:hover {
+    animation: glowingCyan 2.5s  infinite;
+}
+
+@keyframes glowingCyan {
+  0% { box-shadow: 0 0 10px #00ffff; }
+  30% { box-shadow: 0 0 14px #00FFFF, 0 0 24px #00FFFF, 0 0 37px #00FFFF; }
+  /* 60% { box-shadow: 0 0 18px #00FFFF, 0 0 28px #00FFFF, 0 0 41px #00FFFF; } */
+  100% { box-shadow: 0 0 10px #00ffff; }
+
+}
+
+.item img {
+    width: 10vh;
+    height: 10vh;
+    margin-right: 3vh;
+    transition: transform .5s;
+    border-radius:2%;
+} 
+
+.item img.project:hover {
+  transform: translate(200%, 70%) scale(5);
+  /* animation: glowingCyan 3s infinite; */
+  border: 1px solid #00ffff;
+
+}
+
+.item img.project:hover ~ .item {
+  animation: none;
+}
+
+@media screen and (max-height: 400px) {
+  .item img {
+    transform: translateY(10px); /* Adjust the value as needed */
+  }
+}
+
+@keyframes glowingWhite {
+  0% { box-shadow: 0 0 0 #ffffff; }
+  50% { box-shadow: 0 0 10px #ffffff; }
+  /* 30% { box-shadow: 0 0 14px #ffffff, 0 0 24px #ffffff, 0 0 37px #ffffff; } */
+  /* 60% { box-shadow: 0 0 18px #00FFFF, 0 0 28px #00FFFF, 0 0 41px #00FFFF; } */
+  100% { box-shadow: 0 0 0 #ffffff; }
+}
+
+/* madison han */
+.item-title {
+  font-size: 25px;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.item-subtitle, .item-description {
+  color: rgb(255, 255, 255);
+  font-size: 19px;
+
+}
+
+.Projects .item-subtitle {
+  color: rgb(192, 192, 192);
+
+}
+
+.item-date {
+  color: rgb(192, 192, 192);
+  font-size: 19px;
+}
+
+
+.item-divider {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    height: 15px;
+    width: 95%;
+
+    /* padding: 10vh; */
+}
+
+a.github, a.github:visited, p.github{
+  padding:0vh;
+}
+
+a.github:hover {
+  color:#00FFFF;
+}
+
+li {
+  list-style-position: outside;
+
+  text-indent:-1.5em;
+}
