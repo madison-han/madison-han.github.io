@@ -35,7 +35,7 @@ function App() {
       <div
         class="to-top-button"
         onClick={scrollToTop}>
-        To Top
+          <div class="upArrow">↑</div>
       </div>
 
       <Footer /> 
