@@ -11,7 +11,7 @@ const projectData = [
       description: "Developed under the strict timeline of two weeks with two teammates for a final group project. Created with 51 .cc and .h files. Achieved a 99.1%.",
       img: "https://i.imgur.com/uUEwiBF.gif",
       skills: "C++, OOP, Software Design Patterns, Collaborative Problem Solving",
-      github: "https://github.com/madison-han/cc3k"
+      github: "https://github.com/madison-han/CC3K-Public"
     },
     {
       title: "Harmony Haven",
