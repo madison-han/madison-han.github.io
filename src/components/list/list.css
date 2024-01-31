@@ -10,7 +10,7 @@
 
 .item {
     padding: 3vh;
-    border-radius: 3em;
+    border-radius: 2.5em;
     font-family: "Poppins", sans-serif;
     background-color: rgb(44, 44, 44); 
     display: flex;
@@ -40,7 +40,7 @@
 
 .item img.project:hover {
   transform: translate(200%, 70%) scale(5);
-  animation: glowingCyan 3s infinite;
+  /* animation: glowingCyan 3s infinite; */
   border: 1px solid #00ffff;
 
 }

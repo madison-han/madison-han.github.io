@@ -8,7 +8,7 @@ const educationData = [
         title: "University of Waterloo",
         subtitle: "Bachelor's degree — Double major",
         date: "May 2027",
-        description: "Object Oriented Software Development (C++), Elementary Algorithm Design and Data Abstraction (C), Tools and Techniques for Software Development",
+        description: "ITEM: Object Oriented Software Development (C++) ITEM: Elementary Algorithm Design and Data Abstraction (C) ITEM: Tools and Techniques for Software Development (Bash)",
         skills: "C++, C, OOP, Functional Programming, Linux Shell, Debugging, Probability, Statistics, R, Python"
     },
     {
@@ -16,7 +16,7 @@ const educationData = [
         title: "St. Clement's School",
         subtitle: "High School Diploma",
         date: "Jun 2022",
-        description: "Elected Programming Team Co-President, VEX Robotics, Senior Math Team, STEM Committee, LUMINA Fashion Show, Track and Field, Cross Country",
+        description: "ITEM: Elected Programming Team Co-President, VEX Robotics, Senior Math Team, STEM Committee, LUMINA Fashion Show, Track and Field, Cross Country",
         skills: "Java"
     },
 ]

@@ -33,7 +33,17 @@ const List = (props) => {
                                 return <li key={index}>{item}</li>;
                             })
                         }
-                        {!isItemed && props.description} 
+                        {!isItemed ? 
+                            props.description.startsWith("https") ? 
+                                <a 
+                                    href={props.description}
+                                    style={{padding: '0 0 0', textDecoration:'underline'}}>
+                                    Verification Link
+                                </a>
+
+                                : props.description
+                            : null
+                        }
                     </div>
 
                     <br/>

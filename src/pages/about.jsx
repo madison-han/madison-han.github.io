@@ -7,6 +7,7 @@ import Projects from "./projects";
 import Experience from "./experience";
 import Education from "./education";
 import Contact from "./contact";
+import Awards from "./awards";
 import PageDivider from "../components/page-divider/page-divider";
 import ProgressLine from "../components/progress-line/progress-line";
 import "../styles/style.css";
@@ -66,6 +67,8 @@ const About = () => {
                     <Experience />
                         <PageDivider />
                     <Education />
+                        <PageDivider />
+                    <Awards />
                 </div>
             {/* } */}
 

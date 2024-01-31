@@ -45,7 +45,7 @@ const projectData = [
       subtitle: "Automation",
       description: "Various Bash scripts written for testing automation in a Software Development course.", 
       img: "https://i.imgur.com/yqj2yLo.gif",
-      skills: "React, JavaScript, VSCode",
+      skills: "Bash, VSCode, Testing & Debugging",
       github: "https://github.com/madison-han/Scripts-for-CS-246/"
     },
     {

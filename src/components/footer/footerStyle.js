@@ -9,6 +9,9 @@ export const Box = styled.div`
 	width: 100%;
 	overflow: hidden;
 	height:2vh;
+
+
+
 `;
 
 
@@ -17,9 +20,6 @@ export const FooterContainer = styled.div`
 	flex-direction: column;
 	justify-content: center;
 	max-height:0vh;
-	// @media (max-height: 768px) {
-	// 	font-size:10px;
-	// }
 	
 `;
 
@@ -28,6 +28,11 @@ export const Column = styled.div`
 	flex-direction: column;
 	text-align: center;
 	color: grey;
+	padding-top:2vh;
+
+	@media (max-height: 268px) {
+		font-size:4vh;
+	}
 	
 `;
 
