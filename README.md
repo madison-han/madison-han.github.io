@@ -1,3 +1,3 @@
-https://madison-han.github.io
+Video demo if [site](https://madison-han.github.io) down:
 
-video demo if site down: https://i.imgur.com/MAiXgSd.mp4
+![demo](https://github.com/madison-han/madison-han.github.io/blob/main/site.gif)
